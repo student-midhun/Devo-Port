@@ -1,0 +1,88 @@
+/** @type {import('tailwindcss').Config} */
+export default {
+  content: ['./index.html', './src/**/*.{js,ts,jsx,tsx}'],
+  darkMode: 'class',
+  theme: {
+    extend: {
+      colors: {
+        primary: {
+          50: '#e6f1fe',
+          100: '#cce3fd',
+          200: '#99c7fb',
+          300: '#66abf9',
+          400: '#338ff7',
+          500: '#0073f5',
+          600: '#005cc4',
+          700: '#004593',
+          800: '#002e62',
+          900: '#001731',
+        },
+        secondary: {
+          50: '#e6fff9',
+          100: '#ccfff4',
+          200: '#99ffe9',
+          300: '#66ffde',
+          400: '#33ffd3',
+          500: '#00ffc8',
+          600: '#00cca0',
+          700: '#009978',
+          800: '#006650',
+          900: '#003328',
+        },
+        accent: {
+          50: '#fff2e6',
+          100: '#ffe6cc',
+          200: '#ffcc99',
+          300: '#ffb366',
+          400: '#ff9933',
+          500: '#ff8000',
+          600: '#cc6600',
+          700: '#994d00',
+          800: '#663300',
+          900: '#331a00',
+        },
+        dark: {
+          50: '#e6e8ed',
+          100: '#ccd1db',
+          200: '#99a3b7',
+          300: '#667593',
+          400: '#33476f',
+          500: '#0A192F',
+          600: '#081426',
+          700: '#060f1c',
+          800: '#040a13',
+          900: '#020509',
+        },
+        light: {
+          50: '#ffffff',
+          100: '#fafafa',
+          200: '#f5f5f5',
+          300: '#f0f0f0',
+          400: '#dedede',
+          500: '#cccccc',
+          600: '#a3a3a3',
+          700: '#7a7a7a',
+          800: '#525252',
+          900: '#292929',
+        },
+      },
+      fontFamily: {
+        sans: ['Inter', 'sans-serif'],
+        mono: ['Roboto Mono', 'monospace'],
+      },
+      fontSize: {
+        '2xs': '0.65rem',
+      },
+      animation: {
+        'float': 'float 6s ease-in-out infinite',
+      },
+      keyframes: {
+        float: {
+          '0%, 100%': { transform: 'translateY(0)' },
+          '50%': { transform: 'translateY(-10px)' },
+        },
+      },
+    },
+  },
+  plugins: [],
+};
